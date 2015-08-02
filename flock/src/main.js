@@ -1,6 +1,6 @@
-import Boid from './boid';
-import Vector from './vector';
-import Behaviors from './behaviors';
+var Boid = require('./boid');
+var Vector = require('./vector');
+var Behaviors = require('./behaviors');
 
 console.log(Boid);
 console.log(Vector);

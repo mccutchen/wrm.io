@@ -1,4 +1,4 @@
-import Vector from './vector';
+var Vector = require('./vector');
 
 function Boid(pos) {
     this.pos = pos || new Vector(0, 0);
@@ -14,4 +14,4 @@ Boid.prototype.distance = function(other) {
     return (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
 };
 
-export default Boid;
+module.exports = Boid;

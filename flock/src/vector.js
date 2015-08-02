@@ -15,7 +15,9 @@ Vector.mean = function(vectors) {
     case 1:
         return vectors[0];
     default:
-        var sum = vectors.reduce((acc, v) => acc.add(v), new Vector());
+        var sum = vectors.reduce(function(acc, v) {
+            return acc.add(v);
+        }, new Vector());
         return sum.scale(1 / length);
     }
 };
@@ -78,4 +80,4 @@ Vector.prototype.toString = function() {
     return 'Vector(' + this.x + ',' + this.y + ')';
 };
 
-export default Vector;
+module.exports = Vector;
